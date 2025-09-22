@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Painel Admin - Preenche Campo "Título Problema"
 // @namespace    http://gouvea77.com
-// @version      1.0
+// @version      1.1
 // @description  Script para auxiliar no Blip
 // @author       Gabriel Gouvea
 // @match        https://medbackoffice.medgrupo.com.br/*
@@ -13,7 +13,7 @@
 
 (function () {
   "use strict";
-
+  alert("teste")
   const observer = new MutationObserver((changes, obs) => {
     let assunto = document.querySelector('[formcontrolname="assunto"]');
     let selectCategoria = document.querySelectorAll(".mat-select")[5];
